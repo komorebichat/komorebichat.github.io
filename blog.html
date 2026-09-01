@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>お店のブログ｜こもれびカフェ</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&amp;family=Zen+Maru+Gothic:wght@400;700;900&amp;display=swap" rel="stylesheet"/>
+
+<link href="css/blog.css" rel="stylesheet"/><link href="images/favicon.png" rel="icon"/></head>
+<body>
+<!-- ============ ブログ一覧 ============ -->
+<div class="pagehead">ブログ一覧（/blog）</div>
+<div class="phone">
+<header class="hd">
+<div class="hlogo">
+<img alt="こもれびカフェ" src="images/logo_wide.png"/> </div>
+<div class="menubtn" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</header>
+<section style="padding:0;border-bottom:none;">
+<span class="tag">1 最新記事バナー</span>
+<div class="imgbox" style="height:220px;border-radius:0;"><span>写真：最新記事サムネイル（自動スライド・最大8個）</span></div>
+<div style="position:absolute;left:0;right:0;bottom:34px;padding:0 16px;">
+<p style="background:rgba(255,255,255,.9);display:inline-block;padding:6px 12px;font-size:12px;font-weight:bold;border-radius:8px;">
+        記事タイトルがここに入ります
+      </p>
+</div>
+<p class="center small" style="padding:10px 0;letter-spacing:3px;color:var(--accent);">● ○ ○ ○ ○ ○ ○ ○</p>
+</section>
+<section>
+<span class="tag">2 店舗ブログ見出し</span>
+<span class="t-main">お店の日常をお届けします</span>
+<span class="t-lg">こもれびカフェ official ブログ</span>
+</section>
+<section style="padding-top:0;">
+<span class="tag">3 カテゴリ</span>
+<div class="cat-row">
+<div class="cat" title="/blog/interview/"><div class="imgbox"><img alt="インタビュー" src="images/blog-01.png" style="width:100%;height:100%;object-fit:cover;display:block;"/></div>インタビュー</div>
+<div class="cat" title="/blog/shop/"><div class="imgbox"><img alt="お店について" src="images/blog-02.png" style="width:100%;height:100%;object-fit:cover;display:block;"/></div>お店について</div>
+<div class="cat" title="/blog/job-info/"><div class="imgbox"><img alt="お仕事について" src="images/blog-03.png" style="width:100%;height:100%;object-fit:cover;display:block;"/></div>お仕事について</div>
+<div class="cat" title="/blog/worry/"><div class="imgbox"><img alt="お悩み" src="images/blog-04.png" style="width:100%;height:100%;object-fit:cover;display:block;"/></div>お悩み</div>
+<div class="cat" title="/blog/ikebukuro/"><div class="imgbox"><img alt="池袋でおすすめ！" src="images/blog-05.png" style="width:100%;height:100%;object-fit:cover;display:block;"/></div>池袋で<br/>おすすめ！</div>
+</div>
+</section>
+<section>
+<span class="tag">3+ 記事一覧</span>
+<a class="card" href="blog.html#aya-article">
+<img alt="サムネイル" src="images/blog-06.jpg" style="min-width:92px;width:92px;aspect-ratio:1/1;height:auto;align-self:flex-start;object-fit:cover;border-radius:14px;flex-shrink:0;display:block;"/>
+<div><p class="meta">#インタビュー</p><p class="ttl">あやさんに聞きました。続けられた理由。</p><p class="small">2026.08.01</p></div>
+</a>
+<a class="card" href="#">
+<img alt="サムネイル" src="images/blog-07.jpg" style="min-width:92px;width:92px;aspect-ratio:1/1;height:auto;align-self:flex-start;object-fit:cover;border-radius:14px;flex-shrink:0;display:block;"/>
+<div><p class="meta">#お仕事について</p><p class="ttl">おはなしだけで本当に稼げるの？を数字で説明します</p><p class="small">2026.07.28</p></div>
+</a>
+<a class="card" href="#">
+<img alt="サムネイル" src="images/blog-08.jpg" style="min-width:92px;width:92px;aspect-ratio:1/1;height:auto;align-self:flex-start;object-fit:cover;border-radius:14px;flex-shrink:0;display:block;"/>
+<div><p class="meta">#お店について</p><p class="ttl">こもれびカフェのお部屋、少し模様替えしました</p><p class="small">2026.07.20</p></div>
+</a>
+<a class="card" href="blog.html#riko-article">
+<img alt="サムネイル" src="images/blog-09.jpg" style="min-width:92px;width:92px;aspect-ratio:1/1;height:auto;align-self:flex-start;object-fit:cover;border-radius:14px;flex-shrink:0;display:block;"/>
+<div><p class="meta">#インタビュー</p><p class="ttl">りこさんに聞きました。副業リモ活を続けられた理由。</p><p class="small">2026.07.14</p></div>
+</a>
+<a class="btn soft">もっと見る</a>
+</section>
+<section style="background:var(--base-light);">
+<span class="tag">4 スタッフのこと</span>
+<p class="t-lg">スタッフのこと</p>
+<div class="staff-card2">
+<div class="staff-head">
+<img alt="みゆ（池袋店スタッフ）" class="staff-photo" src="images/top-25.jpg"/>
+<div>
+<div class="staff-name">みゆ</div>
+<div class="staff-role">池袋店スタッフ／じつは人見知り</div>
+</div>
+</div>
+<ul class="staff-notes">
+<li>✎ すきなもの：カフェラテ、文房具</li>
+<li>✎ 得意なこと：はじめての子の"最初のひとこと"を一緒に考えること</li>
+<li>✎ 女の子に言われてうれしかった言葉：「ここだと、素の自分でいられます」</li>
+</ul>
+<p class="staff-msg">こもれびカフェはスタッフがたくさんいるお店じゃないけど、1店舗のみでお家みたいな距離感だから、小さなことでも細かく気づいて、アドバイスできます。</p>
+</div>
+</section>
+<footer>
+<div class="flogo">こもれびカフェ</div>
+<ul>
+<li><a href="index.html">トップ</a></li>
+<li><a href="about.html">お店について</a></li>
+<li><a href="shigoto.html">お仕事内容</a></li>
+<li><a href="hoshu.html">報酬と働き方</a></li>
+<li><a href="anshin.html">安全安心について</a></li>
+<li><a href="blog.html">お店のブログ</a></li>
+</ul>
+<p class="small" style="margin-top:18px;line-height:1.9;">こもれびカフェは、池袋駅徒歩5分・通勤専門のリモ活（チャットレディ）事務所。女の子に寄り添いサポート力に力を入れています。</p>
+<div class="company">
+<b>店名：</b>こもれびカフェ<br/>
+<b>所在地：</b>東京都豊島区池袋<br/>
+<b>事業内容：</b>ライブ配信サポート事業
+    </div>
+<p class="small" style="margin-top:14px;"><a href="privacy.html" style="color:var(--text-sub);text-decoration:underline;">プライバシーポリシー</a></p>
+</footer>
+<p class="small">お仕事内容｜報酬｜安心・安全｜ブログ｜こもれびについて</p>
+</div>
+<div class="kaiyu"><a href="index.html">→ TOPへ戻る</a></div>
+
+<!-- ============ 記事テンプレート ============ -->
+<div class="pagehead">記事テンプレート（/blog/[slug]）</div>
+<div class="phone" id="aya-article">
+<header class="hd">
+<div class="hlogo">
+<img alt="こもれびカフェ" src="images/logo_wide.png"/> </div>
+<div class="menubtn" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</header>
+<section style="padding:0;border-bottom:none;">
+<img alt="あやさんインタビュー写真" src="images/blog-10.jpg" style="width:100%;aspect-ratio:3/2;height:auto;object-fit:cover;display:block;"/>
+</section>
+<section>
+<span class="tag">記事ヘッダー</span>
+<p class="small"><span class="badge">#インタビュー</span> <span style="margin-left:6px;">2026.08.01</span></p>
+<h2 style="margin-top:10px;"><span class="t-main">あやさんに聞きました。<br/>続けられた理由。</span></h2>
+<div style="display:flex;gap:8px;align-items:center;margin-top:12px;">
+<img alt="みゆ（池袋店スタッフ）" src="images/blog-11.jpg" style="width:32px;height:32px;min-width:32px;border-radius:50%;object-fit:cover;display:block;"/>
+<p class="small">Written by みゆ（池袋店スタッフ）</p>
+</div>
+</section>
+<section>
+<span class="tag">本文（例文）</span>
+<p>こんにちは、池袋店スタッフのみゆです。今日は、こもれびカフェで2年目を迎えたあやさん（24）にお話を聞きました。平日は派遣の事務員として働きながら、週3日こもれびに通ってくれています。ご本人いわく、かなりの人見知り。そんなあやさんが、どうして2年も続いているのか。休憩スペースでゆっくり聞いてみました。</p>
+<p class="h3-wrap"><span class="h-article">「事務を選んだのも、人と話さなくていいから」</span></p>
+<p style="margin-top:12px;">―― 人見知りで会話も苦手だったと聞きました。正直、このお仕事は不安じゃなかったですか？<br/>「不安しかなかったです（笑）。そもそも事務の仕事を選んだのも、人とあまり話さなくていいからだったので。リモ活を知ったときも『私には無理だろうな』って、しばらく応募できませんでした」</p>
+<p style="margin-top:12px;">―― それでも応募した決め手は？<br/>「面接だけでも、質問だけでもいいって書いてあったからです。それで話を聞きに行ったら、スタッフさんに『できないことは断っていいよ』って最初に言われて。頑張らせられるものだと思っていたので、拍子抜けしました」</p>
+<img alt="休憩スペースでインタビュー中のあやさん" src="images/blog-12.jpg" style="width:100%;aspect-ratio:3/2;height:auto;object-fit:cover;border-radius:14px;margin-top:12px;display:block;"/>
+<p class="h3-wrap"><span class="h-article">会話のコツは、スタッフさんに教わった</span></p>
+<p style="margin-top:12px;">―― 会話が苦手なところから、どうやって慣れていったんですか？<br/>「スタッフさんが『最初のひとこと』から一緒に考えてくれました。話が途切れちゃったときの返し方とか、質問のしかたとか、コツをほんとに少しずつ。最初の頃は配信のあとに毎回ふり返りもしてくれて。今は『いつもの常連さんと、いつものおはなし』って感じなので、緊張はほぼないです」</p>
+<p style="margin-top:12px;">―― 事務のお仕事と比べてどうですか？<br/>「不思議なんですけど、今は話すほうの仕事が楽しみなんですよね。自分でもびっくりしています」</p>
+<img alt="配信ルームの様子" src="images/blog-13.jpg" style="width:100%;aspect-ratio:3/2;height:auto;object-fit:cover;border-radius:14px;margin-top:12px;display:block;"/>
+<p class="h3-wrap"><span class="h-article">お店がおしゃれだから、出勤が苦じゃない</span></p>
+<p style="margin-top:12px;">―― お店の環境はどうですか？<br/>「お店がおしゃれなので、出勤するのが苦じゃないです。お洋服もコスメもそろってるので、仕事終わりに手ぶらで来られるのもうれしい。あと、たまにある差し入れが楽しみで……この前はお店でたこ焼きを作ってくれました（笑）。ああいう距離感が、うちっぽいなと思います」</p>
+<p style="margin-top:12px;">―― 最後に、昔のあやさんみたいに迷っている方にひとこと。<br/>「人見知りでも、会話が苦手でも、少しずつで大丈夫です。私みたいなタイプでも2年続いてるので」</p>
+<p style="margin-top:12px;">あやさんの「少しずつ」を、これからも一緒に。まずはお仕事体験で、お店の空気をのぞいてみてください。</p>
+</section>
+<section style="background:var(--base-light);">
+<span class="tag">記事内CTA</span>
+<p class="center small">この記事を読んで気になったら</p>
+<a class="btn" href="#line">LINEで今すぐお仕事体験に応募する</a>
+</section>
+<section>
+<span class="tag">関連記事</span>
+<p class="t-lg">こちらもどうぞ</p>
+<a class="card" href="#">
+<div class="imgbox">写真</div>
+<div><p class="meta">#お仕事について</p><p class="ttl">おはなしだけで本当に稼げるの？を数字で説明します</p></div>
+</a>
+<a class="card" href="#">
+<div class="imgbox">写真</div>
+<div><p class="meta">#お店について</p><p class="ttl">こもれびカフェのお部屋、少し模様替えしました</p></div>
+</a>
+</section>
+<div class="kaiyu"><a href="blog.html">→ ブログ一覧に戻る</a><a href="index.html">→ TOPへ戻る</a></div>
+<footer>
+<div class="flogo">こもれびカフェ</div>
+<ul>
+<li><a href="index.html">トップ</a></li>
+<li><a href="about.html">お店について</a></li>
+<li><a href="shigoto.html">お仕事内容</a></li>
+<li><a href="hoshu.html">報酬と働き方</a></li>
+<li><a href="anshin.html">安全安心について</a></li>
+<li><a href="blog.html">お店のブログ</a></li>
+</ul>
+<p class="small" style="margin-top:18px;line-height:1.9;">こもれびカフェは、池袋駅徒歩5分・通勤専門のリモ活（チャットレディ）事務所。女の子に寄り添いサポート力に力を入れています。</p>
+<div class="company">
+<b>店名：</b>こもれびカフェ<br/>
+<b>所在地：</b>東京都豊島区池袋<br/>
+<b>事業内容：</b>ライブ配信サポート事業
+    </div>
+<p class="small" style="margin-top:14px;"><a href="privacy.html" style="color:var(--text-sub);text-decoration:underline;">プライバシーポリシー</a></p>
+</footer>
+</div>
+<!-- ============ 記事テンプレート ============ -->
+<div class="pagehead">記事テンプレート（/blog/[slug]）例：りこさん</div>
+<div class="phone" id="riko-article">
+<header class="hd">
+<div class="hlogo">
+<img alt="こもれびカフェ" src="images/logo_wide.png"/> </div>
+<div class="menubtn" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</header>
+<section style="padding:0;border-bottom:none;">
+<img alt="りこさんインタビュー写真" src="images/blog-14.jpg" style="width:100%;aspect-ratio:3/2;height:auto;object-fit:cover;display:block;"/>
+</section>
+<section>
+<span class="tag">記事ヘッダー</span>
+<p class="small"><span class="badge">#インタビュー</span> <span style="margin-left:6px;">2026.07.14</span></p>
+<h2 style="margin-top:10px;"><span class="t-main">りこさんに聞きました。<br/>副業リモ活を続けられた理由。</span></h2>
+<div style="display:flex;gap:8px;align-items:center;margin-top:12px;">
+<img alt="みゆ（池袋店スタッフ）" src="images/blog-11.jpg" style="width:32px;height:32px;min-width:32px;border-radius:50%;object-fit:cover;display:block;"/>
+<p class="small">Written by みゆ（池袋店スタッフ）</p>
+</div>
+</section>
+<section>
+<span class="tag">本文（例文）</span>
+<p>こんにちは、池袋店スタッフのみゆです。今日お話を聞いたのは、3年目のりこさん（28）。本業はデザイナーで、いくつかの副業と並行しながら、週1日こもれびに来てくれています。実はりこさん、もともと声優の養成所に通っていた経歴の持ち主。「声」を活かした働き方について聞きました。</p>
+<p class="h3-wrap"><span class="h-article">声優の養成所から、リモ活へ</span></p>
+<p style="margin-top:12px;">―― 声優を目指していたそうですね。<br/>「はい、養成所に通っていました。今はデザイナーが本業ですけど、声を使うことへの憧れはずっと残っていて。リモ活を知ったとき『これ、声が活きる仕事だ』と思ったのが始めたきっかけです」</p>
+<p style="margin-top:12px;">―― 実際、声は武器になっていますか？<br/>「なっていると思います。発声とか、聞き取りやすい話し方とか、養成所で学んだことがそのまま使えるので。お客さまに『声がgoodだから』って言われると、あの時間は無駄じゃなかったなって（笑）」</p>
+<p class="h3-wrap"><span class="h-article">「作戦会議」が楽しい</span></p>
+<p style="margin-top:12px;">―― こもれびを選んでよかったと思うところは？<br/>「作戦を一緒に練ってくれるところです。おはなしでちゃんとお客さまを掴むにはどうするか、プロフィールの見せ方から会話の組み立てまで、スタッフさんと作戦会議するんです。週1しか入れない分、1回1回をどう濃くするか。それを一緒に考えてくれるのが心強いです」</p>
+<img alt="配信ルームの様子" src="images/blog-15.jpg" style="width:100%;aspect-ratio:3/2;height:auto;object-fit:cover;border-radius:14px;margin-top:12px;display:block;"/>
+<p class="h3-wrap"><span class="h-article">「もっと入りたい」と言ったら、止められた話</span></p>
+<p style="margin-top:12px;">―― 印象に残っている出来事はありますか？<br/>「シフトをもっと増やそうとしたときに、スタッフさんに『今の副業の量、どれくらい？』って聞かれて。正直に答えたら『それなら今は増やさないほうがいい』って、むしろ止められたんです（笑）。稼がせたいお店なら絶対言わないですよね。ここは本当に無理をさせないんだな、って信頼が深まりました」</p>
+<p style="margin-top:12px;">―― これからはどうしていきたいですか？<br/>「いくつかある副業を整理して、リモ活の比重を増やそうと思っています。今度は自分から、ちゃんと余裕を作ったうえで。またスタッフさんと作戦会議です（笑）」</p>
+<p style="margin-top:12px;">週1日でも、自分のペースで、自分の強みを活かして。りこさんのような働き方も、こもれびカフェでは当たり前です。</p>
+</section>
+<section style="background:var(--base-light);">
+<span class="tag">記事内CTA</span>
+<p class="center small">この記事を読んで気になったら</p>
+<a class="btn" href="#line">LINEで今すぐお仕事体験に応募する</a>
+</section>
+<section>
+<span class="tag">関連記事</span>
+<p class="t-lg">こちらもどうぞ</p>
+<a class="card" href="blog.html#aya-article">
+<div class="imgbox">写真</div>
+<div><p class="meta">#インタビュー</p><p class="ttl">あやさんに聞きました。続けられた理由。</p></div>
+</a>
+<a class="card" href="#">
+<div class="imgbox">写真</div>
+<div><p class="meta">#お仕事について</p><p class="ttl">おはなしだけで本当に稼げるの？を数字で説明します</p></div>
+</a>
+</section>
+<div class="kaiyu"><a href="blog.html">→ ブログ一覧に戻る</a><a href="index.html">→ TOPへ戻る</a></div>
+<footer>
+<div class="flogo">こもれびカフェ</div>
+<ul>
+<li><a href="index.html">トップ</a></li>
+<li><a href="about.html">お店について</a></li>
+<li><a href="shigoto.html">お仕事内容</a></li>
+<li><a href="hoshu.html">報酬と働き方</a></li>
+<li><a href="anshin.html">安全安心について</a></li>
+<li><a href="blog.html">お店のブログ</a></li>
+</ul>
+<p class="small" style="margin-top:18px;line-height:1.9;">こもれびカフェは、池袋駅徒歩5分・通勤専門のリモ活（チャットレディ）事務所。女の子に寄り添いサポート力に力を入れています。</p>
+<div class="company">
+<b>店名：</b>こもれびカフェ<br/>
+<b>所在地：</b>東京都豊島区池袋<br/>
+<b>事業内容：</b>ライブ配信サポート事業
+    </div>
+<p class="small" style="margin-top:14px;"><a href="privacy.html" style="color:var(--text-sub);text-decoration:underline;">プライバシーポリシー</a></p>
+</footer>
+</div>
+<!-- ☰メニュードロワー（共通） -->
+<div class="drawer" id="drawer" onclick="closeMenu()">
+<div class="dpanel" onclick="event.stopPropagation()">
+<div class="dhead">
+<div class="hlogo">
+<img alt="こもれびカフェ ロゴ" src="images/logo.png"/>
+</div>
+<div class="dclose" onclick="closeMenu()"><span class="xx">✕</span><span class="t">CLOSE</span></div>
+<svg class="dwave" fill="#fff" preserveaspectratio="none" viewbox="0 0 390 24"><path d="M0 24 L0 13 Q97 0 195 11 Q292 22 390 8 L390 24 Z"></path></svg>
+</div>
+<div class="dbody">
+<div class="menu-grid">
+<a class="menu-cell wide" href="index.html"><div class="micon"><svg aria-label="トップ" fill="none" height="48" viewbox="0 0 400 400" width="48" xmlns="http://www.w3.org/2000/svg">
+<path d="M176.672 221.15C183.92 158.934 235.869 125.607 282.003 100.54" stroke="#4A3F36" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9" stroke-width="16"></path>
+<path d="M279.832 109.907C269.489 197.741 247.468 207.825 181.017 222.321" stroke="#4A3F36" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9" stroke-width="16"></path>
+<path d="M274.4 111.078C237.21 152.381 202.233 195.956 169.069 241.057" stroke="#4A3F36" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9" stroke-width="16"></path>
+<path d="M140.356 258.222C130.493 268.669 115.689 268.598 118.345 290.76C119.782 302.754 217.201 299.598 217.201 290.76C217.201 272.098 204.131 268.551 199.837 263.464C193.175 255.574 212.411 241.056 173.02 242.227C162.34 242.545 151.208 243.769 140.356 243.769" stroke="#4A3F36" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9" stroke-width="16"></path>
+<path d="M252.682 155.244C246.928 156.113 241.11 155.878 235.308 155.878" stroke="#4A3F36" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9" stroke-width="16"></path>
+<path d="M230.967 179.329C228.134 178.435 225.2 178.697 222.28 178.697" stroke="#4A3F36" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9" stroke-width="16"></path>
+</svg></div><span>トップ</span></a>
+<a class="menu-cell" href="about.html"><div class="micon"><svg aria-label="お店" fill="none" height="48" viewbox="0 0 400 400" width="48" xmlns="http://www.w3.org/2000/svg">
+<path d="M112 170.553C170.197 172.25 229.086 163.825 287.237 163.825" stroke="#4A3F36" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9" stroke-width="16"></path>
+<path d="M150.763 347.627C145.375 319.606 116.381 148.984 137.036 138.69C158.435 128.023 257.744 127.069 265.956 135.252C278.565 147.826 261.956 341.306 254.924 348.313C251.324 351.901 236.608 351.113 232.815 351.113C206.568 351.113 179.483 353.416 153.519 351.064" stroke="#4A3F36" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9" stroke-width="16"></path>
+<path d="M238.561 130.446C251.228 103.087 261.324 74.325 273.33 47" stroke="#4A3F36" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9" stroke-width="16"></path>
+</svg></div><span>お店について</span></a>
+<a class="menu-cell" href="shigoto.html"><div class="micon"><svg aria-label="仕事内容" fill="none" height="48" viewbox="0 0 400 400" width="48" xmlns="http://www.w3.org/2000/svg">
+<path d="M120.547 214.429C120.547 187.878 104.047 110.33 117.927 93.9285C130.975 78.5116 263.514 82.3773 275.493 96.4235C284.404 105.825 274.98 201.812 269.047 220.032" stroke="#4A3F36" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9" stroke-width="16"></path>
+<path d="M260.023 222.458C213.1 217.603 166.189 225.809 120.549 217.607" stroke="#4A3F36" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9" stroke-width="16"></path>
+<path d="M111.55 234.424C99.9904 257.458 90.6837 281.015 78 303.038" stroke="#4A3F36" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9" stroke-width="16"></path>
+<path d="M78.5566 313.013C159.107 314.462 241.36 309.779 321.512 309.779" stroke="#4A3F36" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9" stroke-width="16"></path>
+<path d="M272.021 225.692C289.4 250.974 315.779 273.27 322.94 299.296" stroke="#4A3F36" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9" stroke-width="16"></path>
+<path d="M319.065 315.763C244.21 316.382 152.239 312.874 84.4092 315.225" stroke="#4A3F36" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9" stroke-width="16"></path>
+<path d="M210.132 284.977C202.431 285.5 194.422 285.301 186.872 286.169" stroke="#4A3F36" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9" stroke-width="16"></path>
+</svg></div><span>お仕事内容</span></a>
+<a class="menu-cell" href="hoshu.html"><div class="micon"><svg aria-label="コイン" fill="none" height="48" viewbox="0 0 400 400" width="48" xmlns="http://www.w3.org/2000/svg">
+<path d="M293.602 247.555C305.989 265.03 321.605 218.047 318.631 212.312C315.353 205.99 303.029 206.503 302.094 202.823C297.128 183.26 293.634 133.662 245.309 127.899M198.057 127.899C115.015 132.36 110.247 193.528 129.624 243.42C153.148 303.98 242.918 309.317 277.909 257.839" stroke="#4A3F36" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9" stroke-width="16"></path>
+<path d="M239.941 142.069C227.279 139.833 213.831 141.646 199.597 147.508" opacity="0.503384" stroke="#4A3F36" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9" stroke-width="16"></path>
+<path d="M277.527 195.706C278.593 191.554 278.593 190.083 279.675 187.403" stroke="#4A3F36" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9" stroke-width="16"></path>
+<path d="M265.203 284.667C278.684 302.081 251.845 302.946 245.313 290.374" stroke="#4A3F36" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9" stroke-width="16"></path>
+<path d="M142.092 275.178C132.419 297.373 160.467 307.764 160.467 284.741" stroke="#4A3F36" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9" stroke-width="16"></path>
+<path d="M120.737 201.059C115.562 203.901 111.156 203.333 106.366 199.174C92.3889 187.046 91.4645 157.341 102.982 172.766C115.842 189.982 95.8063 197.766 81.0029 187.855" stroke="#4A3F36" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9" stroke-width="16"></path>
+<path d="M285.038 137.196C302.871 121.302 298.649 143.844 293.265 151.818" stroke="#4A3F36" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9" stroke-width="16"></path>
+<path d="M233.163 109.999C215.459 84.9374 183.168 125.29 205.859 141.807M232.847 138.57C237.616 132.929 239.528 124.83 235.913 117.228" stroke="#4A3F36" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9" stroke-width="16"></path>
+</svg></div><span>報酬と働き方</span></a>
+<a class="menu-cell" href="anshin.html"><div class="micon"><svg aria-label="盾" fill="none" height="48" viewbox="0 0 400 400" width="48" xmlns="http://www.w3.org/2000/svg">
+<path d="M190.587 178.901C163.984 114.531 249.746 84.5972 281.674 136.343C304.757 173.75 264.235 230.165 226.284 212.59" stroke="#4A3F36" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9" stroke-width="16"></path>
+<path d="M187.88 186.902C164.625 213.507 139.492 238.236 114.229 262.543" stroke="#4A3F36" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9" stroke-width="16"></path>
+<path d="M116.28 270.107C99.8488 299.195 126.586 291.045 148.132 285.851" stroke="#4A3F36" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9" stroke-width="16"></path>
+<path d="M149.472 285.5C149.472 280.156 150.846 274.773 153.594 269.351L170.655 271.577L174.538 251.337H187.881L191.389 232.67L205.473 238.136C210.328 223.789 215.376 214.276 220.616 209.594" stroke="#4A3F36" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9" stroke-width="16"></path>
+<path d="M242.897 141.435C247.669 136.278 254.135 136.188 257.869 143.227C271.893 169.636 221.276 169.851 242.066 141.882" stroke="#4A3F36" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9" stroke-width="16"></path>
+<path d="M191.389 208.333C172.583 223.755 146.223 251.858 131.766 262.543" opacity="0.503384" stroke="#4A3F36" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9" stroke-width="16"></path>
+</svg></div><span>安全安心について</span></a>
+<a class="menu-cell" href="blog.html"><div class="micon"><svg aria-label="本" enable-background="new 0 0 64 64" fill="#4A3F36" height="48" id="Layer_1" version="1.1" viewbox="0 0 64 64" width="48" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g>
+<g>
+<path d="M32.042,21.613c-0.27,0-0.538-0.108-0.735-0.321c-0.375-0.406-0.349-1.039,0.057-1.413    c3.078-2.844,9.794-2.482,12.819-0.854c0.486,0.262,0.668,0.868,0.406,1.354c-0.262,0.487-0.869,0.669-1.354,0.407    c-2.413-1.3-8.205-1.569-10.515,0.562C32.527,21.525,32.284,21.613,32.042,21.613z"></path>
+</g>
+</g>
+<g>
+<g>
+<path d="M32.041,21.613c-0.242,0-0.485-0.088-0.678-0.266c-2.31-2.132-8.102-1.861-10.514-0.562    c-0.489,0.261-1.093,0.079-1.354-0.407s-0.08-1.093,0.406-1.354c3.025-1.629,9.741-1.988,12.819,0.854    c0.406,0.374,0.431,1.007,0.057,1.413C32.579,21.505,32.311,21.613,32.041,21.613z"></path>
+</g>
+</g>
+<g>
+<g>
+<path d="M15.752,46.229c-0.331,0-0.654-0.163-0.844-0.463c-0.297-0.466-0.16-1.084,0.306-1.381    c4.372-2.784,14.249-2.345,17.391,0.048c0.439,0.334,0.525,0.962,0.19,1.401c-0.335,0.439-0.96,0.525-1.401,0.19    c-2.541-1.933-11.542-2.222-15.106,0.048C16.122,46.178,15.936,46.229,15.752,46.229z"></path>
+</g>
+</g>
+<g>
+<g>
+<path d="M15.732,25.021c-0.356,0-0.701-0.19-0.881-0.525c-0.262-0.486-0.08-1.093,0.406-1.355c1.241-0.668,3.08-1.115,5.044-1.226    c0.563-0.035,1.024,0.39,1.055,0.941s-0.391,1.023-0.942,1.055c-1.658,0.094-3.232,0.465-4.209,0.991    C16.054,24.983,15.892,25.021,15.732,25.021z"></path>
+</g>
+</g>
+<g>
+<g>
+<path d="M32.042,41.708c-0.27,0-0.538-0.108-0.735-0.321c-0.375-0.406-0.349-1.039,0.057-1.413    c3.079-2.843,9.795-2.482,12.819-0.854c0.486,0.263,0.668,0.869,0.406,1.355c-0.262,0.485-0.869,0.667-1.354,0.406    c-2.413-1.3-8.204-1.569-10.515,0.562C32.527,41.62,32.284,41.708,32.042,41.708z"></path>
+</g>
+</g>
+<g>
+<g>
+<path d="M32.041,41.708c-0.242,0-0.485-0.088-0.678-0.266c-2.311-2.132-8.101-1.861-10.514-0.562    c-0.486,0.261-1.092,0.079-1.354-0.406c-0.262-0.486-0.08-1.093,0.406-1.355c3.025-1.629,9.74-1.988,12.819,0.854    c0.406,0.374,0.431,1.007,0.057,1.413C32.579,41.6,32.311,41.708,32.041,41.708z"></path>
+</g>
+</g>
+<g>
+<path d="M32,46.229c-0.552,0-1-0.447-1-1V20.53c0-0.553,0.448-1,1-1s1,0.447,1,1v24.698C33,45.781,32.552,46.229,32,46.229z"></path>
+</g>
+<g>
+<path d="M43.75,40.863c-0.552,0-1-0.447-1-1c0-3.975-0.012-8.075-0.024-11.785c-0.009-3.068-0.018-5.87-0.018-8.114   c0-0.553,0.448-1,1-1s1,0.447,1,1c0,2.242,0.008,5.042,0.018,8.107c0.012,3.713,0.024,7.815,0.024,11.792   C44.75,40.416,44.302,40.863,43.75,40.863z"></path>
+</g>
+<g>
+<path d="M20.396,40.863c-0.552,0-1-0.447-1-1c0-3.975-0.013-8.075-0.024-11.785c-0.009-3.068-0.018-5.87-0.018-8.114   c0-0.553,0.448-1,1-1s1,0.447,1,1c0,2.242,0.009,5.042,0.018,8.107c0.011,3.713,0.024,7.815,0.024,11.792   C21.396,40.416,20.948,40.863,20.396,40.863z"></path>
+</g>
+<g>
+<path d="M15.751,46.229c-0.552,0-1-0.447-1-1c0-3.975-0.012-8.422-0.024-12.446c-0.009-3.328-0.018-6.366-0.018-8.61   c0-0.553,0.448-1,1-1s1,0.447,1,1c0,2.242,0.008,5.279,0.018,8.604c0.012,4.026,0.024,8.476,0.024,12.452   C16.751,45.781,16.304,46.229,15.751,46.229z"></path>
+</g>
+<g>
+<g>
+<path d="M48.248,46.229c-0.184,0-0.37-0.051-0.536-0.156c-3.564-2.27-12.565-1.98-15.106-0.048    c-0.439,0.335-1.067,0.249-1.401-0.19s-0.249-1.067,0.19-1.401c3.143-2.391,13.017-2.833,17.391-0.048    c0.466,0.297,0.603,0.915,0.306,1.381C48.901,46.065,48.578,46.229,48.248,46.229z"></path>
+</g>
+</g>
+<g>
+<path d="M48.249,46.229c-0.552,0-1-0.447-1-1c0-3.977,0.012-8.426,0.024-12.452c0.009-3.325,0.018-6.362,0.018-8.604   c0-0.553,0.448-1,1-1s1,0.447,1,1c0,2.244-0.008,5.282-0.018,8.61c-0.012,4.024-0.024,8.472-0.024,12.446   C49.249,45.781,48.801,46.229,48.249,46.229z"></path>
+</g>
+<g>
+<g>
+<path d="M48.268,25.172c-0.16,0-0.322-0.038-0.473-0.119c-0.912-0.492-2.38-0.855-3.927-0.973    c-0.551-0.042-0.963-0.522-0.921-1.073c0.042-0.551,0.514-0.97,1.073-0.921c1.839,0.14,3.561,0.579,4.724,1.205    c0.486,0.263,0.668,0.869,0.406,1.355C48.969,24.981,48.624,25.172,48.268,25.172z"></path>
+</g>
+</g>
+<g>
+<path d="M36.25,25.26c-0.395,0-0.768-0.234-0.926-0.622c-0.209-0.512,0.037-1.095,0.548-1.304c1.081-0.44,2.588-0.466,3.749-0.061   c0.521,0.183,0.796,0.752,0.615,1.273c-0.182,0.522-0.752,0.798-1.274,0.615c-0.7-0.245-1.704-0.233-2.334,0.023   C36.504,25.236,36.376,25.26,36.25,25.26z"></path>
+</g>
+<g>
+<path d="M36.25,29.278c-0.395,0-0.768-0.234-0.926-0.622c-0.209-0.512,0.037-1.095,0.548-1.304c1.08-0.44,2.586-0.464,3.749-0.06   c0.521,0.183,0.796,0.752,0.615,1.273c-0.182,0.522-0.752,0.798-1.274,0.615c-0.701-0.244-1.704-0.235-2.334,0.022   C36.504,29.255,36.376,29.278,36.25,29.278z"></path>
+</g>
+<g>
+<path d="M36.25,33.641c-0.395,0-0.768-0.234-0.926-0.622c-0.209-0.512,0.037-1.095,0.548-1.304c1.08-0.441,2.586-0.465,3.749-0.06   c0.521,0.183,0.796,0.752,0.615,1.273c-0.182,0.522-0.752,0.797-1.274,0.615c-0.701-0.244-1.704-0.234-2.334,0.022   C36.504,33.617,36.376,33.641,36.25,33.641z"></path>
+</g>
+<g>
+<path d="M24.688,25.225c-0.395,0-0.768-0.234-0.926-0.622c-0.209-0.512,0.037-1.095,0.548-1.304   c1.081-0.44,2.588-0.466,3.749-0.061c0.521,0.183,0.796,0.752,0.615,1.273c-0.182,0.522-0.75,0.798-1.274,0.615   c-0.699-0.244-1.703-0.233-2.334,0.023C24.942,25.201,24.813,25.225,24.688,25.225z"></path>
+</g>
+<g>
+<path d="M24.688,29.244c-0.395,0-0.768-0.234-0.926-0.622c-0.209-0.512,0.037-1.095,0.548-1.304   c1.081-0.441,2.588-0.466,3.749-0.061c0.521,0.183,0.796,0.752,0.615,1.273c-0.182,0.522-0.75,0.799-1.274,0.615   c-0.699-0.245-1.703-0.233-2.334,0.023C24.942,29.221,24.813,29.244,24.688,29.244z"></path>
+</g>
+<g>
+<path d="M24.688,33.605c-0.395,0-0.768-0.234-0.926-0.622c-0.209-0.512,0.037-1.095,0.548-1.304c1.08-0.44,2.586-0.465,3.749-0.06   c0.521,0.183,0.796,0.752,0.615,1.273c-0.182,0.522-0.75,0.797-1.274,0.615c-0.7-0.244-1.704-0.234-2.334,0.022   C24.942,33.582,24.813,33.605,24.688,33.605z"></path>
+</g>
+</svg></div><span>お店のブログ</span></a>
+<a class="menu-cell" href="index.html#faq"><div class="micon"><svg aria-label="？マーク" enable-background="new 0 0 64 64" fill="#4A3F36" height="48" id="Layer_1" version="1.1" viewbox="0 0 64 64" width="48" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M18.968,47.18c-1.248,0-2.815-0.948-3.199-5.467c-0.408-4.812-0.57-9.846-0.494-15.39c0.033-2.389,0.345-6.617,2.074-8.093  c1.47-1.256,3.757-1.299,5.428-1.33l0.367-0.007c2.12-0.051,8.885-0.074,13.013-0.074c1.637,0,3.012,0.003,3.818,0.01l0.441,0.002  c2.291,0.006,5.753,0.015,6.873,2.207c2.014,3.94,1.449,10.513,1.146,14.043c-0.121,1.405-0.626,4.733-2.83,6.714  c-1.54,1.385-4.384,1.317-6.228,1.284l-0.339-0.006c-1.822-0.028-3.666-0.047-5.498-0.066l-2.629-0.026  c-2.545,0-5.395,0.264-7.235,2.226c-0.322,0.342-0.621,0.746-0.937,1.172c-0.589,0.794-1.198,1.616-2.069,2.208  C20.089,46.98,19.517,47.18,18.968,47.18z M36.156,18.82c-4.874,0-11.056,0.027-12.965,0.073L22.814,18.9  c-1.368,0.025-3.241,0.061-4.166,0.851c-0.764,0.653-1.329,3.367-1.373,6.6c-0.075,5.478,0.084,10.447,0.487,15.193  c0.21,2.48,0.844,3.636,1.206,3.636c0.064,0,0.249-0.024,0.579-0.249c0.59-0.4,1.074-1.053,1.586-1.743  c0.336-0.454,0.684-0.923,1.085-1.351c2.363-2.517,5.72-2.856,8.693-2.856l2.649,0.026c1.836,0.019,3.683,0.039,5.509,0.066  l0.346,0.006c0.302,0.006,0.633,0.012,0.98,0.012c0.742,0,3.001,0,3.873-0.784c1.673-1.504,2.074-4.23,2.168-5.333  c0.271-3.16,0.824-9.598-0.929-13.028c-0.564-1.105-3.513-1.113-5.097-1.117l-0.452-0.002C39.156,18.823,37.786,18.82,36.156,18.82z  "></path><path d="M37.115,26.205c-1.094,0-2.333-0.002-3.273-0.003L32.915,26.2c-0.552,0-1-0.449-0.999-1.001c0-0.552,0.448-0.999,1-0.999  c0,0,0,0,0,0l0.928,0.001c1.678,0.002,4.306,0.006,5.358-0.001c0.002,0,0.005,0,0.007,0c0.549,0,0.996,0.443,1,0.993  c0.004,0.552-0.441,1.003-0.993,1.007C38.75,26.203,37.978,26.205,37.115,26.205z"></path><path d="M31.562,32.915c-3.105,0-6.106-0.001-6.771-0.002c-0.552,0-1-0.449-0.999-1.001c0-0.552,0.448-0.999,1-0.999c0,0,0,0,0,0  c1.399,0.001,13.131,0.005,14.41-0.004c0.002,0,0.005,0,0.007,0c0.549,0,0.996,0.443,1,0.993c0.004,0.552-0.44,1.003-0.993,1.007  C38.544,32.913,34.99,32.915,31.562,32.915z"></path></svg></div><span>よくある質問</span></a>
+</div>
+<a class="menu-cta" href="#line" onclick="closeMenu()">→ LINEで気軽に相談してみる</a>
+</div>
+</div>
+</div>
+<div class="fixnav" id="fixNav">
+<a class="line-btn" href="#line">LINEで<br/>応募する</a>
+</div>
+
+<script src="js/blog.js"></script></body>
+</html>
