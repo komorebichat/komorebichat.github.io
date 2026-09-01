@@ -1,0 +1,105 @@
+:root{
+  --text-main:#4A3F36;
+  --text-sub:#8B8278;
+  --accent:#4A3F36;
+  --base:#FFFFFF;        /* 白55%：ページの地色 */
+  --base-light:#F7F2ED;  /* ベージュ25%：セクション・カード背景 */
+  --outer:#F3EDE7;       /* 画面外周（スマホ幅の外側） */
+  --blue:#E9F0F2;        /* くすみブルー10%：安心系セクションの背景 */
+  --blue-deep:#A8C0CB;   /* くすみブルー濃：あしらい・アクセント */
+  --pink:#FAEDEE;        /* 淡いピンク7%：可愛さ系セクションの背景 */
+  --pink-deep:#E0B7BD;   /* 淡いピンク濃：バッジ・あしらい */
+  --line:#DBC8B8;        /* 罫線・枠線 */
+}
+*{margin:0;padding:0;box-sizing:border-box;min-width:0;}
+body{background:var(--outer);font-family:"Zen Kaku Gothic New",sans-serif;color:var(--text-main);line-height:1.8;overflow-x:hidden;}
+img{max-width:100%;height:auto;display:block;}
+.phone{max-width:600px;margin:0 auto;background:var(--base);position:relative;box-shadow:0 0 40px rgba(74,63,54,.08);}
+
+section{padding:36px 20px;}
+h1,h2{margin-bottom:14px;}
+p{font-size:14px;color:var(--text-main);}
+.small{font-size:12px;color:var(--text-sub);}
+
+.t-main{display:block;font-size:21px;font-weight:700;line-height:1.55;font-family:"Zen Maru Gothic",sans-serif;letter-spacing:.01em;}
+.t-sub{display:block;font-size:14px;font-weight:bold;color:var(--accent);margin-top:8px;}
+.t-lg{display:block;font-size:18px;font-weight:700;line-height:1.5;font-family:"Zen Maru Gothic",sans-serif;color:var(--text-main);margin-bottom:10px;}
+.mark{color:var(--accent);font-weight:700;}
+
+.btn{display:block;text-align:center;background:var(--accent);color:#fff;font-size:14px;font-weight:bold;padding:14px;border-radius:26px;margin:16px auto 0;max-width:300px;box-shadow:0 6px 18px rgba(74,63,54,.28);text-decoration:none;}
+.btn.soft{background:#fff;color:var(--accent);border:1.5px solid var(--accent);box-shadow:none;}
+
+.lead{font-size:14px;font-weight:700;font-family:"Zen Maru Gothic",sans-serif;margin-top:6px;}
+
+/* 3つの層カード */
+.layer{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;margin-top:14px;}
+.layer:first-of-type{margin-top:16px;}
+.layer-row{display:flex;gap:14px;align-items:flex-start;}
+.layer-icon{width:52px;height:52px;flex-shrink:0;display:block;object-fit:contain;}
+.layer-body{flex:1;min-width:0;}
+.layer-body b{font-size:14.5px;font-weight:700;font-family:"Zen Maru Gothic",sans-serif;color:var(--text-main);display:block;}
+.layer-body p{margin-top:8px;font-size:12px;}
+.layer p{margin-top:10px;font-size:12px;}
+
+/* FAQ：details/summary＋schema.orgでクローラー／AI向けに構造化（TOP・お仕事内容・報酬ページと共通規則） */
+.faq{font-size:12px;border-radius:14px;margin-top:10px;background:var(--base-light);overflow:hidden;}
+.faq .q{list-style:none;cursor:pointer;font-weight:bold;padding:14px 34px 14px 16px;position:relative;}
+.faq .q::-webkit-details-marker{display:none;}
+.faq .q::before{content:"Q  ";font-size:12px;color:var(--accent);}
+.faq .q::after{content:"+";position:absolute;right:16px;top:50%;transform:translateY(-50%);color:var(--accent);font-size:16px;font-weight:bold;}
+.faq[open] .q::after{content:"−";}
+.faq[open] .q{border-bottom:1px solid var(--line);}
+.faq .a{padding:12px 16px 16px;color:var(--text-main);}
+.faq .a::before{content:"A  ";font-weight:bold;color:var(--accent);}
+
+.kaiyu{text-align:center;padding:24px 20px;font-size:12px;}
+.kaiyu a{display:block;color:var(--accent);font-weight:bold;text-decoration:underline;margin-top:8px;}
+
+/* ヘッダー（スティッキー・ロゴ＋店名＋☰メニュー）／TOPページと共通コンポーネント */
+.hd{position:sticky;top:0;z-index:40;display:flex;align-items:center;justify-content:space-between;padding:10px 16px;background:rgba(247,242,237,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);}
+.hd .hlogo{display:flex;align-items:center;gap:8px;}
+.hd .hlogo img{height:34px;width:auto;object-fit:contain;display:block;}
+.hd .hlogo .nm{font-family:"Zen Maru Gothic",sans-serif;font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.02em;line-height:1.3;}
+.hd .hlogo .nm small{display:block;font-size:8.5px;color:var(--text-sub);font-weight:400;letter-spacing:.1em;}
+.hd .menubtn{width:42px;height:42px;border-radius:50%;background:var(--accent);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;cursor:pointer;flex-shrink:0;}
+.hd .menubtn span{display:block;width:16px;height:2px;background:#fff;border-radius:2px;transition:transform .35s cubic-bezier(.33,1,.68,1),opacity .25s ease;}
+.hd .menubtn.active span:nth-child(1){transform:translateY(5px) rotate(45deg);}
+.hd .menubtn.active span:nth-child(2){opacity:0;}
+.hd .menubtn.active span:nth-child(3){transform:translateY(-5px) rotate(-45deg);}
+
+/* 下部固定：LINEボタン */
+.fixnav{position:fixed;right:16px;bottom:18px;z-index:50;display:flex;flex-direction:column;align-items:center;gap:8px;}
+.fixnav .line-btn{background:var(--text-main);color:#fff;text-align:center;padding:13px 20px 12px;font-size:12px;line-height:1.4;font-weight:bold;border-radius:24px;box-shadow:0 6px 18px rgba(0,0,0,.18);white-space:nowrap;}
+
+/* ☰メニュー：上からスライドダウンするドロワー（アイコンパネル形式）／TOPページと共通コンポーネント */
+.drawer{position:fixed;inset:0;background:rgba(20,16,12,.45);opacity:0;pointer-events:none;transition:opacity .3s ease;z-index:159;}
+.drawer.open{opacity:1;pointer-events:auto;}
+.dpanel{position:absolute;top:0;left:50%;width:100%;max-width:600px;height:100%;background:#fff;transform:translate(-50%,0);overflow-y:auto;}
+.dhead{position:relative;background:var(--base-light);padding:20px 20px 36px;}
+.dhead .hlogo .nm{color:var(--text-main);}
+.dhead .hlogo .nm small{color:var(--text-sub);}
+.dclose{position:absolute;top:16px;right:16px;width:42px;height:42px;border-radius:50%;background:#fff;color:var(--accent);display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;gap:1px;box-shadow:0 2px 8px rgba(74,63,54,.15);}
+.dclose .xx{font-size:15px;line-height:1;}
+.dclose .t{font-size:7px;font-weight:800;letter-spacing:.08em;}
+.dwave{position:absolute;left:0;right:0;bottom:-1px;width:100%;display:block;}
+.dbody{padding:20px 22px 30px;}
+.menu-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px;}
+.menu-cell{display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center;text-decoration:none;padding:16px 8px;border-radius:16px;background:var(--base-light);border:1px solid var(--line);}
+.menu-cell.wide{grid-column:1/-1;}
+.menu-cell:active{background:var(--base-light);}
+
+.menu-cell span{font-size:12px;font-weight:bold;color:var(--text-main);line-height:1.4;}
+.menu-cta{display:block;text-align:center;background:var(--accent);color:#fff;font-size:14px;font-weight:bold;padding:14px;border-radius:24px;text-decoration:none;box-shadow:0 6px 16px rgba(74,63,54,.24);}
+
+/* フッター（TOPと共通コンポーネント） */
+footer{background:var(--base-light);padding:36px 22px 130px;}
+footer .flogo{font-family:"Zen Maru Gothic",sans-serif;font-size:15px;font-weight:700;text-align:center;margin-bottom:20px;}
+footer ul{list-style:none;font-size:14px;}
+footer ul li{padding:0;border-bottom:1px solid var(--line);}
+footer ul li a{display:block;padding:10px 0;color:var(--text-main);text-decoration:none;}
+footer ul li a:active{color:var(--accent);}
+footer .company{margin-top:20px;font-size:12px;color:var(--text-sub);line-height:2;}
+footer .company b{color:var(--text-main);}
+
+/* メニュー等の実アイコン（SVG） */
+.micon{display:flex;align-items:center;justify-content:center;color:var(--accent);}
